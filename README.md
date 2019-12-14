@@ -1,6 +1,6 @@
-##Android-Architectures
+# Android-Architectures
 
-** Project Description :**
+**Project Description :**
 
 Connect With a REST - API and retrieve list of countries in Mvc , Mvp and Mvvm Models.
 
