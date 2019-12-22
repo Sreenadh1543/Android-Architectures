@@ -17,15 +17,15 @@ public class ArchitecturesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_architectures);
     }
 
-    public void onMvc(View view){
+    public void onMvc(View view) {
         startActivity(MvcActivity.getIntent(this));
     }
 
-    public void onMvp(View view){
+    public void onMvp(View view) {
         startActivity(MvpActivity.getIntent(this));
     }
 
-    public void onMvvm(View view){
+    public void onMvvm(View view) {
         startActivity(MvvmActivity.getIntent(this));
     }
 }
