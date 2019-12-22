@@ -2,7 +2,7 @@
 
 **Project Description :**
 
-Connect With a REST - API and retrieve list of countries in Mvc , Mvp and Mvvm Models.
+Connect With a REST - API and retrieve list of countries in Mvc , Mvp and Mvvm Architectures.
 
 Countries API to be connected with 
 
