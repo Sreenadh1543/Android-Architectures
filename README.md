@@ -20,6 +20,16 @@ Adapters Used :
 > MVC  : Model - View - Controller
 
 
+Concept : To Split the implementation as per data model ; presentation layer ; and controller flows 
+
+How it fits with Android ?
+
+* In android an Activity manages layout + Business logic .
+
+* Mvc makes an activity to set it's View (Layout) alone and makes it dependent on controller for model operations. 
+
+
+
 
 
 > MVP  : Model - View - Presenter
