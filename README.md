@@ -28,6 +28,21 @@ How it fits with Android ?
 
 * Mvc makes an activity to set it's View (Layout) alone and makes it dependent on controller for model operations. 
 
+**Conclusions :**
+
+Separation of Concerns is done as below :
+
+*  Model --  Controls the connection with API and retrieval of Countries list
+
+*  View --  Controls all Actions related to GUI (Activity)
+
+*  Controller -- Business logic here to retrieve country list and delegate back to handle success or Failure scenarios. 
+
+Concerns 
+
+* A tight coupling between activity and controller ; but better than keeping every thing in an activity .
+
+
 
 
 
