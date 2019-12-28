@@ -12,6 +12,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.androidarchitectures.R;
+import com.example.androidarchitectures.model.CountryService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +22,7 @@ public class MvcActivity extends AppCompatActivity {
     private List<String> countryNames=new ArrayList<>();
     private ArrayAdapter<String> adapter;
     private ListView list;
+    private CountriesController controller;
 
 
     @Override
@@ -28,7 +30,7 @@ public class MvcActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mvc);
         setTitle("Mvc Activity");
-
+        controller=new CountriesController(this);
 
         list=findViewById(R.id.list);
         adapter=new ArrayAdapter(this,R.layout.row_layout,R.id.listText,countryNames);
@@ -39,14 +41,6 @@ public class MvcActivity extends AppCompatActivity {
                 Toast.makeText(MvcActivity.this,"View Clicked "+countryNames.get(position),Toast.LENGTH_LONG).show();
             }
         });
-
-        ArrayList<String> countries = new ArrayList<>();
-        countries.add("USA");
-        countries.add("INDIA");
-        countries.add("Belgium");
-        countries.add("Bangladesh");
-        setValues(countries);
-
 
     }
 
