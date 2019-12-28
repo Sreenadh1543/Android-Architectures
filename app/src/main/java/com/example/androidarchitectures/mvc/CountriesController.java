@@ -38,9 +38,13 @@ public class CountriesController {
             @Override
             public void onError(Throwable e) {
 
+                view.onError();
             }
         });
     }
 
 
+    public void onRefresh() {
+        fetchCountries();
+    }
 }
