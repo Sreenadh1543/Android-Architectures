@@ -66,8 +66,28 @@ Separation of Concerns is done as below :
 
 > MVVM : Model  - View - ViewModel
 
+* Solves the problem of Presenter directly calling the view alongside many advantages on unit testing the module making it modular
 
-* 
+**Seperation of Concerns :**
 
+* Model connects with the API and emits events to ViewModel 
 
+* View Model will handle those events and update it's state to serve view when requested.
 
+* view model basically updates it's local information and stays up to date with model , view can use that information as per it's requirement .
+
+**Advantages :**
+
+* No tight coupling between View and View model ; and this pattern even separates activity which has Android API dependency from model and view model
+
+* It enables for easy unit testing on business logic as it's a normal java programme.
+
+###Screenshots for the app Created  
+
+![alt text](pics/1.JPG)
+
+![alt text](pics/2.JPG)
+
+**Screen to Retry when countries list is unavilable**
+
+![alt text](pics/3.JPG)
